@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l10n>
+    <texts>
+        <text name="input_FPL_OPEN_LEDGER" text="Field Profitability Ledger öffnen"/>
+        <text name="fpl_title" text="Field Profitability Ledger"/>
+        <text name="fpl_cycles" text="Feld- &amp; Anbauzyklen"/>
+        <text name="fpl_cycleCurrent" text="Aktuell"/>
+        <text name="fpl_cycleHistory" text="Verlauf"/>
+        <text name="fpl_cycleAll" text="Alle"/>
+        <text name="fpl_overview" text="Übersicht"/>
+        <text name="fpl_activity" text="Aktivität"/>
+        <text name="fpl_scenario" text="Szenario"/>
+        <text name="fpl_comparison" text="Vergleich"/>
+        <text name="fpl_settings" text="Einstellungen"/>
+        <text name="fpl_previous" text="Zurück"/>
+        <text name="fpl_next" text="Weiter"/>
+        <text name="fpl_export" text="Exportieren"/>
+        <text name="fpl_exportCycles" text="Alle Zyklen exportieren"/>
+        <text name="fpl_exportRecords" text="Details exportieren"/>
+        <text name="fpl_exportAudit" text="Prüfbericht exportieren"/>
+        <text name="fpl_ok" text="OK"/>
+        <text name="fpl_ready" text="Bereit"/>
+        <text name="fpl_scope" text="Bereich"/>
+        <text name="fpl_crop" text="Fruchtart"/>
+        <text name="fpl_search" text="Feld, Alias oder Frucht suchen"/>
+        <text name="fpl_searchValue" text="Suche: %s"/>
+        <text name="fpl_searchDialogTitle" text="Felder, Parzellen, Aliasse oder Fruchtarten suchen"/>
+        <text name="fpl_groupByField" text="Feldgruppen"/>
+        <text name="fpl_groupByFieldValue" text="Feldgruppen: %s"/>
+        <text name="fpl_filterAll" text="Alle"/>
+        <text name="fpl_cycleCount" text="%d Zyklen"/>
+        <text name="fpl_viewCycle" text="Zyklus anzeigen"/>
+        <text name="fpl_backToCycles" text="Zurück zu den Zyklen"/>
+        <text name="fpl_cyclePeriod" text="%s – %s"/>
+        <text name="fpl_now" text="Jetzt"/>
+        <text name="fpl_area" text="Zyklusfläche"/>
+        <text name="fpl_colField" text="Feld"/>
+        <text name="fpl_colCrop" text="Fruchtart"/>
+        <text name="fpl_colState" text="Status"/>
+        <text name="fpl_colPeriod" text="Zykluszeitraum"/>
+        <text name="fpl_colArea" text="Fläche"/>
+        <text name="fpl_colYieldHa" text="Ertrag / ha"/>
+        <text name="fpl_colValueHa" text="Erntewert / ha"/>
+        <text name="fpl_colCostHa" text="Kosten / ha"/>
+        <text name="fpl_colMarginHa" text="Marge / ha"/>
+        <text name="fpl_colQuality" text="Qualität"/>
+        <text name="fpl_colChart" text="Gewählte Kennzahl"/>
+        <text name="fpl_colLastHarvest" text="Letzte Ernte"/>
+        <text name="fpl_colLastActivity" text="Letzte Aktivität"/>
+        <text name="fpl_colClosureSelection" text="Abschluss"/>
+        <text name="fpl_colTime" text="Zeit"/>
+        <text name="fpl_colType" text="Typ"/>
+        <text name="fpl_colCategory" text="Kategorie"/>
+        <text name="fpl_colClass" text="Klasse"/>
+        <text name="fpl_colAmount" text="Menge"/>
+        <text name="fpl_colStatus" text="Status"/>
+        <text name="fpl_noCycles" text="Es wurden noch keine unterstützten Feldaktivitäten erfasst."/>
+        <text name="fpl_selectCycle" text="Wähle einen Feld- und Anbauzyklus aus, um das Feldjournal anzuzeigen."/>
+        <text name="fpl_noRecordedTotals" text="Dieser Zyklus enthält noch keine berücksichtigten Zahlenwerte."/>
+        <text name="fpl_noActivity" text="Auf dieser Seite sind keine Aktivitäten verfügbar."/>
+        <text name="fpl_runtimeInactive" text="Das Feldjournal ist in diesem Spielstand nicht verfügbar."/>
+        <text name="fpl_unknown" text="Unbekannt"/>
+        <text name="fpl_unknownCrop" text="Fruchtart noch nicht erkannt"/>
+        <text name="fpl_unavailable" text="Nicht verfügbar"/>
+        <text name="fpl_areaUnavailable" text="Fläche nicht verfügbar"/>
+        <text name="fpl_enabled" text="Aktiviert"/>
+        <text name="fpl_disabled" text="Deaktiviert"/>
+        <text name="fpl_newestFirst" text="Neueste zuerst"/>
+        <text name="fpl_oldestFirst" text="Älteste zuerst"/>
+        <text name="fpl_fieldNumber" text="Feld %s"/>
+        <text name="fpl_parcelNumber" text="Parzelle %s"/>
+        <text name="fpl_landAlias" text="%s · %s"/>
+        <text name="fpl_cycleRowMeta" text="%s  ·  %s"/>
+        <text name="fpl_selectedMeta" text="%s  ·  %s"/>
+        <text name="fpl_pagePosition" text="Seite %d von %d"/>
+        <text name="fpl_recordPosition" text="Einträge %d–%d von %d"/>
+        <text name="fpl_totalPosition" text="Summen %d–%d von %d"/>
+        <text name="fpl_value_hours" text="%s Std."/>
+        <text name="fpl_value_minutes" text="%s Min."/>
+        <text name="fpl_value_seconds" text="%s Sek."/>
+        <text name="fpl_value_hectares" text="%s ha"/>
+        <text name="fpl_value_squareMetres" text="%s m²"/>
+        <text name="fpl_value_litres" text="%s l"/>
+        <text name="fpl_value_litresPerHa" text="%s l/ha"/>
+        <text name="fpl_value_moneyPerHa" text="%s/ha"/>
+        <text name="fpl_value_percent" text="%s%%"/>
+        <text name="fpl_quality" text="Zyklusqualität"/>
+        <text name="fpl_recordQuality" text="Eintragsqualität"/>
+        <text name="fpl_yield" text="Erfasster Ertrag"/>
+        <text name="fpl_audit" text="Prüfprotokoll"/>
+        <text name="fpl_qualityCountsPrimary" text="%d vollständig · %d teilweise"/>
+        <text name="fpl_qualityCountsSecondary" text="%d nicht unterstützt"/>
+        <text name="fpl_auditCountsPrimary" text="%d Korrekturen · %d Ausschlüsse"/>
+        <text name="fpl_auditCountsSecondary" text="%d verdichtete Einträge"/>
+        <text name="fpl_canonicalTotals" text="Maßgebliche erfasste Summen"/>
+        <text name="fpl_activityDetail" text="Arbeits- und Buchungsdetails"/>
+        <text name="fpl_activityLiveTotals" text="Aktuelle Zyklussummen: KI %s · Maschinen %s · Ernte %s · Fläche %s"/>
+        <text name="fpl_estimatedScenario" text="Voraussichtliche Marge des Anbauzyklus"/>
+        <text name="fpl_estimatedHarvestValue" text="Erwarteter Erntewert"/>
+        <text name="fpl_selectedCosts" text="Berücksichtigte Kosten"/>
+        <text name="fpl_estimatedGrossMargin" text="Voraussichtliche Marge"/>
+        <text name="fpl_costPerHa" text="Berücksichtigte Kosten / ha"/>
+        <text name="fpl_scenarioNotice" text="Erwarteter Erntewert abzüglich der in den Einstellungen aktivierten Kostenkategorien."/>
+        <text name="fpl_scenarioNoticeActual" text="Helferlöhne und Kraftstoff verwenden die tatsächlichen FS25-Buchungen."/>
+        <text name="fpl_scenarioNoticeEstimated" text="Andere Kosten sind als Schätzungen markiert. Helfer-DEF verursacht keine separate FS25-Buchung."/>
+        <text name="fpl_scenarioSettingsHint" text="In den Einstellungen legst du fest, welche erfassten Kosten berücksichtigt werden. Das Umschalten löscht keine Aktivitätseinträge."/>
+        <text name="fpl_scenarioUnavailable" text="Szenario nicht verfügbar"/>
+        <text name="fpl_unavailableReason" text="Diese Berechnung ist nicht möglich, weil %s."/>
+        <text name="fpl_reason_estimatedHarvestValueUnavailable" text="für die geerntete Fruchtart noch kein erwarteter Marktwert verfügbar ist"/>
+        <text name="fpl_reason_directObservedCostsUnavailable" text="keine direkt erfassten Kosten vorliegen"/>
+        <text name="fpl_reason_replacementValuedInputsUnavailable" text="keine zu Wiederbeschaffungspreisen bewerteten Betriebsmittel erfasst wurden"/>
+        <text name="fpl_reason_replacementFuelValueUnavailable" text="kein zu Wiederbeschaffungspreisen bewerteter Kraftstoff erfasst wurde"/>
+        <text name="fpl_reason_replacementDefValueUnavailable" text="kein zu Wiederbeschaffungspreisen bewertetes DEF erfasst wurde"/>
+        <text name="fpl_reason_allocatedCostUnavailable" text="aktivierte zugeordnete Kosten nicht erfasst wurden"/>
+        <text name="fpl_reason_harvestOrAreaUnavailable" text="Erntemenge oder Erntefläche nicht verfügbar ist"/>
+        <text name="fpl_reason_cycleAreaUnavailable" text="die Zyklusfläche nicht verfügbar ist"/>
+        <text name="fpl_reason_priceUnavailable" text="der FS25-Marktpreis bei der Erfassung nicht verfügbar war"/>
+        <text name="fpl_reason_fillTypePriceUnavailable" text="die erfasste Füllgutart nicht bewertet werden konnte"/>
+        <text name="fpl_reason_aiLabourRateUnavailable" text="der FS25-KI-Tarif für Feldarbeit nicht verfügbar war"/>
+        <text name="fpl_reason_repairCurveUnavailable" text="die FS25-Reparaturkurve nicht verfügbar war"/>
+        <text name="fpl_reason_unknown" text="mindestens ein erforderlicher erfasster Bestandteil nicht verfügbar ist"/>
+        <text name="fpl_comparisonTitle" text="%s-Zyklen vergleichen"/>
+        <text name="fpl_comparisonScope" text="%d vergleichbare Zyklen · neueste %d Zyklen im Verlauf"/>
+        <text name="fpl_comparisonScopeTruncated" text="Hof %s · %d vergleichbare Zyklen unter den neuesten %d Zyklen"/>
+        <text name="fpl_fieldCycle" text="Feld und Zyklus"/>
+        <text name="fpl_comparisonRowMeta" text="%s · %s"/>
+        <text name="fpl_noComparableCycles" text="In diesem Verlaufsbereich sind keine vergleichbaren Zyklen verfügbar."/>
+        <text name="fpl_chartMetric" text="Kennzahl"/>
+        <text name="fpl_chartOrder" text="Reihenfolge"/>
+        <text name="fpl_metric_marginPerHa" text="Marge / ha"/>
+        <text name="fpl_metric_yieldPerHa" text="Ertrag / ha"/>
+        <text name="fpl_metric_costPerHa" text="Kosten / ha"/>
+        <text name="fpl_metric_valuePerHa" text="Erntewert / ha"/>
+        <text name="fpl_order_highest" text="Höchste zuerst"/>
+        <text name="fpl_order_lowest" text="Niedrigste zuerst"/>
+        <text name="fpl_order_field" text="Feldreihenfolge"/>
+        <text name="fpl_order_newest" text="Neueste zuerst"/>
+        <text name="fpl_selectedMetric" text="%s · ausgewählter Zyklus"/>
+        <text name="fpl_averageMetric" text="%s · Hofdurchschnitt"/>
+        <text name="fpl_differenceMetric" text="Abweichung vom Durchschnitt"/>
+        <text name="fpl_comparableCount" text="Vergleichbare Zyklen"/>
+        <text name="fpl_chartScale" text="%s · goldene Markierung = Hofdurchschnitt"/>
+        <text name="fpl_exactValue" text="Genauer Wert"/>
+        <text name="fpl_presentationSettings" text="Darstellungs- &amp; Szenarioeinstellungen"/>
+        <text name="fpl_settingsNotice" text="Diese lokalen Einstellungen ändern nur die Darstellung. Die Summen im Feldjournal bleiben unverändert."/>
+        <text name="fpl_csvOrder" text="Reihenfolge der CSV-Zyklen"/>
+        <text name="fpl_settingWithValue" text="%s: %s"/>
+        <text name="fpl_scenarioBasis" text="Berücksichtigte Kostengrundlage"/>
+        <text name="fpl_scenarioTableAgreement" text="Diese Schalter aktualisieren gleichzeitig das Szenario sowie die Spalten Kosten/ha und Marge/ha."/>
+        <text name="fpl_harvestValue" text="Erwarteter Erntewert"/>
+        <text name="fpl_projectedMargin" text="Voraussichtliche Marge"/>
+        <text name="fpl_compareAllBasesNotice" text="Der Vergleich verwendet alle verfügbaren Kostengrundlagen, damit frühere Zyklen direkt vergleichbar bleiben."/>
+        <text name="fpl_sortOrder" text="Sortierung der Zyklen"/>
+        <text name="fpl_cycleFilter" text="Filter für Zyklusstatus"/>
+        <text name="fpl_showExcluded" text="Ausgeschlossene Prüfeinträge anzeigen"/>
+        <text name="fpl_includeDirect" text="Direkt erfasste Kosten berücksichtigen"/>
+        <text name="fpl_includeInputs" text="Wiederbeschaffungswert der Betriebsmittel berücksichtigen"/>
+        <text name="fpl_includeFuel" text="Wiederbeschaffungswert des Kraftstoffs berücksichtigen"/>
+        <text name="fpl_includeDef" text="Wiederbeschaffungswert des DEF berücksichtigen"/>
+        <text name="fpl_includeAllocated" text="Zugeordnete Kosten berücksichtigen"/>
+        <text name="fpl_runtimeCompatibility" text="Laufzeitkompatibilität"/>
+        <text name="fpl_compatibilityAllActive" text="Feldarbeit, Betriebsmittel, Ernte, Maschinen, Arbeitszeit und Bewertung sind aktiv."/>
+        <text name="fpl_compatibilityLimited" text="Eingeschränkt: %s nicht verfügbar. Andere unterstützte Buchungen bleiben aktiv."/>
+        <text name="fpl_compatibilityUnavailable" text="Der Status der Laufzeitkompatibilität ist nicht verfügbar."/>
+        <text name="fpl_compatibilityWithSaveWarning" text="%s %s"/>
+        <text name="fpl_saveWarningPreserved" text="Speicherwarnung: Der neueste FPL-Verlauf wurde nicht gespeichert; der vorherige Stand wurde beibehalten."/>
+        <text name="fpl_saveWarningFailed" text="Speicherwarnung: Der neueste FPL-Verlauf wurde nicht gespeichert und der vorherige Stand konnte nicht beibehalten werden."/>
+        <text name="fpl_capacityCompactionNotice" text="Speicherhinweis: Details abgeschlossener Zyklen wurden verdichtet; genaue Summen wurden beibehalten."/>
+        <text name="fpl_component_fieldWork" text="Feldarbeit"/>
+        <text name="fpl_component_application" text="Betriebsmittel"/>
+        <text name="fpl_component_harvest" text="Ernte"/>
+        <text name="fpl_component_machinery" text="Maschinen und Arbeitszeit"/>
+        <text name="fpl_component_economics" text="Bewertung"/>
+        <text name="fpl_filter_all" text="Alle Zyklen"/>
+        <text name="fpl_filter_open" text="Offene Zyklen"/>
+        <text name="fpl_filter_closed" text="Abgeschlossene Zyklen"/>
+        <text name="fpl_filter_archived" text="Archivierte Zyklen"/>
+        <text name="fpl_state_open" text="Offen"/>
+        <text name="fpl_state_closed" text="Abgeschlossen"/>
+        <text name="fpl_state_archived" text="Archiviert"/>
+        <text name="fpl_excluded" text="Ausgeschlossen · im Prüfprotokoll sichtbar"/>
+        <text name="fpl_unallocated" text="Teilweise · nicht zugeordnete Grenzaktivität"/>
+        <text name="fpl_included" text="Berücksichtigt"/>
+        <text name="fpl_recordDetails" text="Eintragsdetails"/>
+        <text name="fpl_selectRecord" text="Wähle zuerst einen Aktivitätseintrag aus."/>
+        <text name="fpl_infoDialogUnavailable" text="Der native Dialog für Eintragsdetails ist in dieser Laufzeit nicht verfügbar."/>
+        <text name="fpl_detailId" text="ID: %s"/>
+        <text name="fpl_detailTime" text="Zeit: %s"/>
+        <text name="fpl_detailType" text="Typ: %s"/>
+        <text name="fpl_detailCategory" text="Kategorie: %s"/>
+        <text name="fpl_detailClass" text="Buchungsklasse: %s"/>
+        <text name="fpl_detailQuality" text="Qualität: %s"/>
+        <text name="fpl_detailAmount" text="Ursprünglicher Wert: %s"/>
+        <text name="fpl_detailAdjusted" text="Angepasster Wert: %s"/>
+        <text name="fpl_detailDirection" text="Richtung: %s"/>
+        <text name="fpl_detailExcluded" text="Ausgeschlossen: %s"/>
+        <text name="fpl_detailProvenance" text="Herkunft: %s"/>
+        <text name="fpl_detailReasons" text="Gründe: %s"/>
+        <text name="fpl_detailReferences" text="Referenzen: %s"/>
+        <text name="fpl_harvestAt" text="Ernte: %s"/>
+        <text name="fpl_activityAt" text="Letzte Aktivität: %s"/>
+        <text name="fpl_setFieldAlias" text="Alias festlegen"/>
+        <text name="fpl_closeCycle" text="Zyklus abschließen"/>
+        <text name="fpl_closeCycleDialogTitle" text="Gib CLOSE ein, um diesen beendeten Anbauzyklus dauerhaft abzuschließen"/>
+        <text name="fpl_closeCycleConfirmation" text="CLOSE"/>
+        <text name="fpl_closeCycleCancelled" text="Zyklusabschluss abgebrochen; gib zur Bestätigung genau CLOSE ein."/>
+        <text name="fpl_cycleClosed" text="Anbauzyklus geschlossen."/>
+        <text name="fpl_cycleCloseFailed" text="Anbauzyklus konnte nicht geschlossen werden: %s"/>
+        <text name="fpl_reviewLegacyClosures" text="Bereinigung älterer offener Zyklen"/>
+        <text name="fpl_reviewLegacyClosuresValue" text="Geerntete Kandidaten prüfen"/>
+        <text name="fpl_legacyReviewTitle" text="Geerntete offene Zyklen prüfen"/>
+        <text name="fpl_legacyReviewSummary" text="%d Kandidaten · %d ausgewählt (höchstens %d pro Abschluss)"/>
+        <text name="fpl_legacyCandidateMeta" text="Ernte um %s · letzte Aktivität um %s"/>
+        <text name="fpl_legacyCandidateSelected" text="Zum Schließen ausgewählt"/>
+        <text name="fpl_legacyCandidateExcluded" text="Nicht ausgewählt"/>
+        <text name="fpl_legacySelectionLimit" text="Wähle höchstens %d Zyklen pro Abschluss aus."/>
+        <text name="fpl_noLegacyClosureSelection" text="Wähle vor dem Schließen mindestens einen Kandidaten aus."/>
+        <text name="fpl_legacyReviewBack" text="Zurück ohne Schließen"/>
+        <text name="fpl_legacyCloseSelected" text="Ausgewählte schließen"/>
+        <text name="fpl_legacyClosureDialogTitle" text="%d offene Zyklen auf %d Feldern ausgewählt. Gib CLOSE ein, um nur diese Zyklen zu schließen"/>
+        <text name="fpl_noLegacyClosureCandidates" text="Es müssen keine älteren offenen Zyklen mit Erntenachweis geprüft werden."/>
+        <text name="fpl_legacyClosureCancelled" text="Bereinigung älterer Zyklen abgebrochen."/>
+        <text name="fpl_legacyClosureComplete" text="%d geprüfte ältere Zyklen geschlossen. Alle Einträge wurden beibehalten."/>
+        <text name="fpl_legacyClosureReviewFailed" text="Kandidaten für ältere Zyklen konnten nicht geprüft werden: %s"/>
+        <text name="fpl_legacyClosureFailed" text="Geprüfte ältere Zyklen konnten nicht geschlossen werden: %s"/>
+        <text name="fpl_excludeSelected" text="Eintrag ausschließen"/>
+        <text name="fpl_correctSelected" text="Eintrag korrigieren"/>
+        <text name="fpl_selectedRecord" text="%s ausgewählt. Beim Ausschluss bleibt das Original im Prüfprotokoll erhalten."/>
+        <text name="fpl_selectedRecordMeta" text="Ausgewählt · %s"/>
+        <text name="fpl_selectCycleForAlias" text="Wähle vor dem Festlegen eines Alias einen Feld- und Anbauzyklus aus."/>
+        <text name="fpl_aliasDialogTitle" text="Alias für Feld oder Parzelle"/>
+        <text name="fpl_aliasSaved" text="Alias gespeichert: %s"/>
+        <text name="fpl_selectRecordForExclusion" text="Wähle vor dem Ausschließen einen Aktivitätseintrag aus."/>
+        <text name="fpl_exclusionDialogTitle" text="Grund für den Ausschluss (Originaleintrag bleibt erhalten)"/>
+        <text name="fpl_exclusionSaved" text="Eintrag aus den Summen ausgeschlossen; das Original bleibt im Prüfprotokoll erhalten."/>
+        <text name="fpl_selectRecordForCorrection" text="Wähle vor der Korrektur einen Aktivitätseintrag aus."/>
+        <text name="fpl_correctionDeltaDialogTitle" text="Vorzeichenbehaftete Korrektur für %s (+ oder - verwenden)"/>
+        <text name="fpl_correctionReasonDialogTitle" text="Grund für die Korrektur (Originalwert bleibt erhalten)"/>
+        <text name="fpl_invalidCorrectionDelta" text="Gib eine vorzeichenbehaftete Zahl ungleich null mit Komma oder Punkt als Dezimaltrennzeichen ein."/>
+        <text name="fpl_correctionSaved" text="Korrektur angefügt; der Originalwert bleibt im Prüfprotokoll erhalten."/>
+        <text name="fpl_editFailed" text="Feldjournal konnte nicht geändert werden: %s"/>
+        <text name="fpl_textInputUnavailable" text="Der native Texteingabedialog ist in dieser Laufzeit nicht verfügbar."/>
+        <text name="fpl_queryFailed" text="Feldjournalabfrage fehlgeschlagen: %s"/>
+        <text name="fpl_settingsFailed" text="Einstellungen konnten nicht gespeichert werden: %s"/>
+        <text name="fpl_exportUnavailable" text="Der CSV-Export ist in dieser Laufzeit nicht verfügbar."/>
+        <text name="fpl_exportSucceeded" text="CSV exportiert nach %s"/>
+        <text name="fpl_exportFailed" text="CSV-Export fehlgeschlagen: %s"/>
+        <text name="fpl_selectCycleForAudit" text="Wähle vor dem Export des Prüfprotokolls einen Zyklus aus."/>
+        <text name="fpl_selectCycleForRecords" text="Wähle vor dem Export der Arbeits- und Buchungsdetails einen Zyklus aus."/>
+        <text name="fpl_error_selectionUnavailable" text="der ausgewählte Zyklus oder Eintrag nicht mehr verfügbar ist; aktualisiere das Feldjournal und versuche es erneut"/>
+        <text name="fpl_error_openCycleRequired" text="diese Aktion nur für einen offenen Anbauzyklus verfügbar ist"/>
+        <text name="fpl_error_invalidRequest" text="die Anfrage einen ungültigen Wert enthält; prüfe ihn und versuche es erneut"/>
+        <text name="fpl_error_reportUnavailable" text="die Feldjournaldaten vorübergehend nicht verfügbar sind; versuche es erneut"/>
+        <text name="fpl_error_settingsSave" text="deine bisherigen lokalen Einstellungen unverändert geblieben sind; versuche es erneut"/>
+        <text name="fpl_error_exportDataChanged" text="sich die Feldjournaldaten während des Exports geändert haben; versuche es erneut, wenn die Feldarbeit ruht"/>
+        <text name="fpl_error_exportWrite" text="die Datei nicht geschrieben werden konnte; prüfe den Exportordner und versuche es erneut"/>
+        <text name="fpl_error_exportUnavailable" text="der Export vorübergehend nicht verfügbar ist; versuche es erneut"/>
+        <text name="fpl_error_actionUnavailable" text="die Anfrage nicht abgeschlossen werden konnte; technische Details stehen im Protokoll"/>
+
+        <text name="fpl_class_Observed" text="Erfasst"/>
+        <text name="fpl_class_Direct" text="Direkt"/>
+        <text name="fpl_class_Valued" text="Bewertet"/>
+        <text name="fpl_class_Allocated" text="Zugeordnet"/>
+        <text name="fpl_class_Estimated" text="Geschätzt"/>
+        <text name="fpl_quality_Complete" text="Vollständig"/>
+        <text name="fpl_quality_Partial" text="Teilweise"/>
+        <text name="fpl_quality_Unsupported" text="Nicht unterstützt"/>
+        <text name="fpl_recordType_operation" text="Arbeitsgang"/>
+        <text name="fpl_recordType_input" text="Betriebsmittel"/>
+        <text name="fpl_recordType_harvest" text="Ernte"/>
+        <text name="fpl_recordType_machinery" text="Maschine"/>
+        <text name="fpl_recordType_labour" text="Arbeitszeit"/>
+        <text name="fpl_recordType_allocation" text="Zuordnung"/>
+        <text name="fpl_recordType_valuation" text="Bewertung"/>
+        <text name="fpl_recordType_summary" text="Zusammenfassung"/>
+        <text name="fpl_recordType_unknown" text="Eintrag"/>
+
+        <text name="fpl_category_seed" text="Saatgutverbrauch"/>
+        <text name="fpl_category_fertilizer" text="Ausgebrachter Dünger"/>
+        <text name="fpl_category_lime" text="Ausgebrachter Kalk"/>
+        <text name="fpl_category_herbicide" text="Ausgebrachtes Herbizid"/>
+        <text name="fpl_category_manure" text="Ausgebrachter Mist"/>
+        <text name="fpl_category_slurry" text="Ausgebrachte Gülle"/>
+        <text name="fpl_category_digestate" text="Ausgebrachte Gärreste"/>
+        <text name="fpl_category_fuel" text="Kraftstoffverbrauch"/>
+        <text name="fpl_category_def" text="DEF-Verbrauch"/>
+        <text name="fpl_category_harvest" text="Erntemenge"/>
+        <text name="fpl_category_workingTime" text="Arbeitszeit"/>
+        <text name="fpl_category_aiLabourTime" text="KI-Arbeitszeit"/>
+        <text name="fpl_category_playerLabourTime" text="Spielerarbeitszeit"/>
+        <text name="fpl_category_wearDelta" text="Verschleißänderung"/>
+        <text name="fpl_category_directObservedCost" text="Direkt erfasste Kosten"/>
+        <text name="fpl_category_inputReplacementValue" text="Wiederbeschaffungswert der Betriebsmittel"/>
+        <text name="fpl_category_fuelReplacementValue" text="Wiederbeschaffungswert des Kraftstoffs"/>
+        <text name="fpl_category_defReplacementValue" text="Wiederbeschaffungswert des DEF"/>
+        <text name="fpl_category_estimatedHarvestValue" text="Geschätzter Erntewert"/>
+        <text name="fpl_category_leaseAllocation" text="Leasingkostenumlage"/>
+        <text name="fpl_category_repairLiability" text="Aufgelaufene Reparaturkosten"/>
+        <text name="fpl_category_aiLabourAllocation" text="KI-Arbeitskostenumlage"/>
+        <text name="fpl_category_playerLabourAllocation" text="Spielerarbeitskostenumlage"/>
+        <text name="fpl_category_ownershipAllocation" text="Besitzkostenumlage"/>
+        <text name="fpl_category_plowing" text="Pflügen"/>
+        <text name="fpl_category_subsoiling" text="Tiefenlockern"/>
+        <text name="fpl_category_cultivating" text="Grubbern"/>
+        <text name="fpl_category_discHarrowing" text="Scheibeneggen"/>
+        <text name="fpl_category_powerHarrowing" text="Kreiseleggen"/>
+        <text name="fpl_category_mulching" text="Mulchen"/>
+        <text name="fpl_category_stonePicking" text="Steine sammeln"/>
+        <text name="fpl_category_seedingPlanting" text="Säen oder Pflanzen"/>
+        <text name="fpl_category_rolling" text="Walzen"/>
+        <text name="fpl_category_mechanicalWeeding" text="Mechanische Unkrautbekämpfung"/>
+        <text name="fpl_category_ordinaryArableHarvest" text="Geerntete Fläche"/>
+        <text name="fpl_category_mixedBoundaryTick" text="Nicht zugeordnete Arbeit an Feldgrenzen"/>
+    </texts>
+</l10n>

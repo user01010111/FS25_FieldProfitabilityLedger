@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modDesc descVersion="110">
+    <author>FieldProfitabilityLedger Project</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>Field Profitability Ledger</en>
+        <de>Field Profitability Ledger</de>
+        <fr>Field Profitability Ledger</fr>
+    </title>
+    <description>
+        <en><![CDATA[
+Field Profitability Ledger tracks field work, inputs, harvests, machinery, and labour for each field and crop cycle. Review yield, crop value, costs, projected margin, and data quality; compare cycles; correct or exclude records; and export summaries, activity, and audit trails to CSV.
+
+Open the ledger with Alt+L. The key can be changed in the controls menu.
+
+For Farming Simulator 25 on PC and Mac. Single-player only.
+        ]]></en>
+        <de><![CDATA[
+Field Profitability Ledger erfasst Feldarbeiten, Betriebsmittel, Ernten, Maschinen und Arbeitszeit für jedes Feld und jeden Anbauzyklus. Prüfe Ertrag, Erntewert, Kosten, voraussichtliche Marge und Datenqualität, vergleiche Zyklen, korrigiere oder schließe Einträge aus und exportiere Zusammenfassungen, Aktivitäten und Prüfprotokolle als CSV.
+
+Öffne das Feldjournal mit Alt+L. Die Tastenbelegung kann im Steuerungsmenü geändert werden.
+
+Für Farming Simulator 25 auf PC und Mac. Nur Einzelspieler.
+        ]]></de>
+        <fr><![CDATA[
+Field Profitability Ledger enregistre les travaux des champs, les intrants, les récoltes, les machines et la main-d'œuvre pour chaque champ et chaque cycle de culture. Consultez le rendement, la valeur de la récolte, les coûts, la marge prévisionnelle et la qualité des données, comparez les cycles, corrigez ou excluez des enregistrements et exportez les résumés, les activités et les journaux d'audit au format CSV.
+
+Ouvrez le registre avec Alt+L. La touche peut être modifiée dans le menu des commandes.
+
+Pour Farming Simulator 25 sur PC et Mac. Mode solo uniquement.
+        ]]></fr>
+    </description>
+    <iconFilename>icon_fieldProfitabilityLedger.dds</iconFilename>
+    <multiplayer supported="false"/>
+    <l10n filenamePrefix="l10n/translation"/>
+    <actions>
+        <action name="FPL_OPEN_LEDGER" axisType="HALF"/>
+    </actions>
+    <inputBinding>
+        <actionBinding action="FPL_OPEN_LEDGER">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_l"/>
+        </actionBinding>
+    </inputBinding>
+    <extraSourceFiles>
+        <sourceFile filename="src/core/Constants.lua"/>
+        <sourceFile filename="src/core/Validation.lua"/>
+        <sourceFile filename="src/core/Identifiers.lua"/>
+        <sourceFile filename="src/core/Accounting.lua"/>
+        <sourceFile filename="src/core/Serialization.lua"/>
+        <sourceFile filename="src/core/Migrations.lua"/>
+        <sourceFile filename="src/core/ExactSum.lua"/>
+        <sourceFile filename="src/core/Ledger.lua"/>
+        <sourceFile filename="src/core/Retention.lua"/>
+        <sourceFile filename="src/core/Geometry.lua"/>
+        <sourceFile filename="src/core/FieldAttribution.lua"/>
+        <sourceFile filename="src/core/OperationCoordinator.lua"/>
+        <sourceFile filename="src/persistence/LedgerStore.lua"/>
+        <sourceFile filename="src/persistence/SavegameFilePort.lua"/>
+        <sourceFile filename="src/persistence/SettingsFilePort.lua"/>
+        <sourceFile filename="src/persistence/ExportFilePort.lua"/>
+        <sourceFile filename="src/services/ReportService.lua"/>
+        <sourceFile filename="src/services/ClientSettings.lua"/>
+        <sourceFile filename="src/services/LedgerCommands.lua"/>
+        <sourceFile filename="src/export/CsvEncoder.lua"/>
+        <sourceFile filename="src/export/ExportService.lua"/>
+        <sourceFile filename="src/adapters/ApplicationObserver.lua"/>
+        <sourceFile filename="src/adapters/HarvestObserver.lua"/>
+        <sourceFile filename="src/adapters/MachineryMeter.lua"/>
+        <sourceFile filename="src/adapters/WorkAreaAdapter.lua"/>
+        <sourceFile filename="src/runtime/ApplicationRuntimeAdapter.lua"/>
+        <sourceFile filename="src/runtime/HarvestRuntimeAdapter.lua"/>
+        <sourceFile filename="src/runtime/MachineryRuntimeAdapter.lua"/>
+        <sourceFile filename="src/runtime/EconomicsRuntimeAdapter.lua"/>
+        <sourceFile filename="src/runtime/Register.lua"/>
+        <sourceFile filename="src/gui/LedgerFrame.lua"/>
+        <sourceFile filename="src/gui/GuiController.lua"/>
+        <sourceFile filename="src/runtime/SinglePlayerRuntime.lua"/>
+        <sourceFile filename="src/FieldProfitabilityLedger.lua"/>
+    </extraSourceFiles>
+</modDesc>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI name="fplFieldProfitabilityLedgerFrame">
+    <GuiElement profile="fs25_menuContainer" name="fplFieldProfitabilityLedgerPage" title="$l10n_fpl_title">
+        <GuiElement profile="fs25_menuHeaderPanel">
+            <Text profile="fs25_menuHeaderTitle" text="$l10n_fpl_title"/>
+        </GuiElement>
+
+        <BoxLayout profile="fs25_subCategorySelectorTabbedBox" id="subCategoryBox"/>
+        <ThreePartBitmap profile="fs25_lineSeparatorTopHighlighted" position="0px -57px"/>
+        <MultiTextOption profile="fs25_subCategorySelectorTabbed" id="subCategoryPaging" position="0px -10px" onClick="onClickTab"/>
+        <Button profile="fs25_subCategorySelectorTabbedTab" id="selectorPrefab">
+            <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+        </Button>
+
+        <GuiElement id="cyclesPanel" profile="fplPanel">
+            <GuiElement id="cycleFilters" position="0px 755px" size="1570px 46px">
+                <Text profile="fplFilterLabel" position="0px 0px" size="80px 34px" text="$l10n_fpl_scope"/>
+                <MultiTextOption profile="fplFilterOption" id="cycleScopeOption" position="82px 0px" size="190px 34px" onClick="onClickCycleScope"/>
+                <Text profile="fplFilterLabel" position="290px 0px" size="65px 34px" text="$l10n_fpl_crop"/>
+                <MultiTextOption profile="fplFilterOption" id="cycleCropOption" position="355px 0px" size="190px 34px" onClick="onClickCycleCrop"/>
+                <Text profile="fplFilterLabel" position="565px 0px" size="75px 34px" text="$l10n_fpl_quality"/>
+                <MultiTextOption profile="fplFilterOption" id="cycleQualityOption" position="640px 0px" size="190px 34px" onClick="onClickCycleQuality"/>
+                <Button profile="fplCompactButton" id="cycleSearchButton" position="850px 0px" size="270px 34px" text="$l10n_fpl_search" onClick="onClickCycleSearch"/>
+                <Button profile="fplCompactButton" id="cycleGroupButton" position="1140px 0px" size="270px 34px" text="$l10n_fpl_groupByField" onClick="onClickCycleGroup"/>
+                <Text profile="fplCount" id="cycleCountText" position="1420px 6px" size="150px 24px"/>
+            </GuiElement>
+
+            <GuiElement profile="fplHeaderBox" position="0px 710px" size="1570px 34px">
+                <TableHeader id="cycleSortHeaders[1]" profile="fplTableHeader" position="0px 0px" size="105px 32px" text="$l10n_fpl_colField" columnName="field" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[2]" profile="fplTableHeader" position="105px 0px" size="135px 32px" text="$l10n_fpl_colCrop" columnName="crop" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[3]" profile="fplTableHeader" position="240px 0px" size="105px 32px" text="$l10n_fpl_colState" columnName="state" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[4]" profile="fplTableHeader" position="345px 0px" size="205px 32px" text="$l10n_fpl_colPeriod" columnName="period" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[5]" profile="fplTableHeader" position="550px 0px" size="105px 32px" text="$l10n_fpl_colArea" columnName="area" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[6]" profile="fplTableHeader" position="655px 0px" size="150px 32px" text="$l10n_fpl_colYieldHa" columnName="yieldPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[7]" profile="fplTableHeader" position="805px 0px" size="165px 32px" text="$l10n_fpl_colValueHa" columnName="valuePerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[8]" profile="fplTableHeader" position="970px 0px" size="155px 32px" text="$l10n_fpl_colCostHa" columnName="costPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[9]" profile="fplTableHeader" position="1125px 0px" size="165px 32px" text="$l10n_fpl_colMarginHa" columnName="marginPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="cycleSortHeaders[10]" profile="fplTableHeader" position="1290px 0px" size="170px 32px" text="$l10n_fpl_colQuality" columnName="quality" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2px" size="1460px 2px"/>
+            </GuiElement>
+
+            <SmoothList profile="fplTableList" id="cycleList" position="0px 72px" size="1460px 632px" listSectionHeader="cycleSection" onClick="onCycleListClick" onDoubleClick="onCycleListDoubleClick" emptyIndicatorId="cycleEmptyText">
+                <ListItem profile="fplCycleRow" name="cycleRow">
+                    <Text profile="fplCell" position="0px 0px" size="105px 38px" name="field"/>
+                    <Text profile="fplCell" position="105px 0px" size="135px 38px" name="crop"/>
+                    <Text profile="fplCell" position="240px 0px" size="105px 38px" name="state"/>
+                    <Text profile="fplCellSmall" position="345px 0px" size="205px 38px" name="period"/>
+                    <Text profile="fplCellNumber" position="550px 0px" size="105px 38px" name="area"/>
+                    <Text profile="fplCellNumber" position="655px 0px" size="150px 38px" name="yieldPerHa"/>
+                    <Text profile="fplCellNumber" position="805px 0px" size="165px 38px" name="valuePerHa"/>
+                    <Text profile="fplCellNumber" position="970px 0px" size="155px 38px" name="costPerHa"/>
+                    <Text profile="fplCellNumber" position="1125px 0px" size="165px 38px" name="marginPerHa"/>
+                    <Text profile="fplCell" position="1290px 0px" size="170px 38px" name="quality"/>
+                </ListItem>
+                <ListItem profile="fs25_subCategoryListSectionHeader" name="cycleSection">
+                    <Text profile="fs25_subCategoryListSectionHeaderTitle" name="title"/>
+                </ListItem>
+            </SmoothList>
+            <Text profile="fplEmpty" id="cycleEmptyText" position="140px 380px" size="1180px 44px" text="$l10n_fpl_noCycles"/>
+            <ThreePartBitmap profile="fplSliderBox" position="1478px 72px" size="6px 632px"><Slider profile="fs25_listSlider" dataElementId="cycleList"/></ThreePartBitmap>
+            <Button profile="fplActionButton" id="viewCycleButton" position="0px 16px" size="260px 42px" text="$l10n_fpl_viewCycle" onClick="onClickViewCycle"/>
+            <Text profile="fplStatus" id="statusText" position="285px 25px" size="1275px 24px" text="$l10n_fpl_ready"/>
+        </GuiElement>
+
+        <GuiElement id="overviewPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" id="selectedTitle" position="0px 750px" size="980px 34px"/>
+            <Text profile="fplDetailMeta" id="selectedMeta" position="0px 720px" size="1500px 24px"/>
+            <BoxLayout profile="fplKpiRow" position="0px 610px" size="1460px 92px">
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_area"/><Text profile="fplKpiValue" id="overviewAreaValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_yield"/><Text profile="fplKpiValue" id="yieldValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_colValueHa"/><Text profile="fplKpiValue" id="overviewValuePerHa"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_colCostHa"/><Text profile="fplKpiValue" id="overviewCostPerHa"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_colMarginHa"/><Text profile="fplKpiValue" id="overviewMarginPerHa"/></GuiElement>
+            </BoxLayout>
+            <Text profile="fplSectionTitle" position="0px 574px" size="500px 26px" text="$l10n_fpl_canonicalTotals"/>
+            <SmoothList profile="fplTableList" id="totalsList" position="0px 84px" size="1460px 478px" emptyIndicatorId="totalEmptyText">
+                <ListItem profile="fplDetailRow" name="totalRow">
+                    <Text profile="fplCellLeft" position="18px 0px" size="1080px 38px" name="name"/>
+                    <Text profile="fplCellNumber" position="1100px 0px" size="340px 38px" name="value"/>
+                </ListItem>
+            </SmoothList>
+            <Text profile="fplEmpty" id="totalEmptyText" position="140px 310px" size="1180px 44px" text="$l10n_fpl_noRecordedTotals"/>
+            <ThreePartBitmap profile="fplSliderBox" position="1478px 84px" size="6px 478px"><Slider profile="fs25_listSlider" dataElementId="totalsList"/></ThreePartBitmap>
+            <Button profile="fplActionButton" position="0px 22px" size="300px 42px" text="$l10n_fpl_backToCycles" onClick="onClickCycles"/>
+            <Button profile="fplActionButton" position="315px 22px" size="300px 42px" text="$l10n_fpl_setFieldAlias" onClick="onClickSetAlias"/>
+            <Button profile="fplActionButton" id="closeCycleButton" position="630px 22px" size="300px 42px" text="$l10n_fpl_closeCycle" onClick="onClickCloseCycle"/>
+            <Text profile="fplStatus" id="overviewStatusText" position="950px 31px" size="510px 24px"/>
+        </GuiElement>
+
+        <GuiElement id="activityPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" id="activityTitle" position="0px 750px" size="980px 34px"/>
+            <Text profile="fplActivityTotals" id="activityLiveTotals" position="0px 720px" size="1460px 24px"/>
+            <GuiElement profile="fplHeaderBox" position="0px 678px" size="1460px 34px">
+                <Text profile="fplStaticHeader" position="0px 0px" size="180px 32px" text="$l10n_fpl_colTime"/>
+                <Text profile="fplStaticHeader" position="180px 0px" size="170px 32px" text="$l10n_fpl_colType"/>
+                <Text profile="fplStaticHeader" position="350px 0px" size="270px 32px" text="$l10n_fpl_colCategory"/>
+                <Text profile="fplStaticHeader" position="620px 0px" size="170px 32px" text="$l10n_fpl_colClass"/>
+                <Text profile="fplStaticHeader" position="790px 0px" size="240px 32px" text="$l10n_fpl_colAmount"/>
+                <Text profile="fplStaticHeader" position="1030px 0px" size="190px 32px" text="$l10n_fpl_colQuality"/>
+                <Text profile="fplStaticHeader" position="1220px 0px" size="240px 32px" text="$l10n_fpl_colStatus"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2px" size="1460px 2px"/>
+            </GuiElement>
+            <SmoothList profile="fplTableList" id="activityList" position="0px 86px" size="1460px 584px" onClick="onActivityListClick" onDoubleClick="onActivityListDoubleClick" emptyIndicatorId="activityEmptyText">
+                <ListItem profile="fplActivityRow" name="activityRow">
+                    <Text profile="fplCellSmall" position="0px 0px" size="180px 42px" name="time"/>
+                    <Text profile="fplCell" position="180px 0px" size="170px 42px" name="type"/>
+                    <Text profile="fplCellLeft" position="350px 0px" size="270px 42px" name="category"/>
+                    <Text profile="fplCell" position="620px 0px" size="170px 42px" name="class"/>
+                    <Text profile="fplCellNumber" position="790px 0px" size="240px 42px" name="amount"/>
+                    <Text profile="fplCell" position="1030px 0px" size="190px 42px" name="quality"/>
+                    <Text profile="fplCell" position="1220px 0px" size="240px 42px" name="status"/>
+                </ListItem>
+            </SmoothList>
+            <Text profile="fplEmpty" id="activityEmptyText" position="140px 370px" size="1180px 44px" text="$l10n_fpl_noActivity"/>
+            <ThreePartBitmap profile="fplSliderBox" position="1478px 86px" size="6px 584px"><Slider profile="fs25_listSlider" dataElementId="activityList"/></ThreePartBitmap>
+            <Button profile="fplActionButton" position="0px 22px" size="220px 42px" text="$l10n_fpl_recordDetails" onClick="onClickActivityDetails"/>
+            <Button profile="fplActionButton" position="235px 22px" size="220px 42px" text="$l10n_fpl_excludeSelected" onClick="onClickExcludeSelected"/>
+            <Button profile="fplActionButton" position="470px 22px" size="220px 42px" text="$l10n_fpl_correctSelected" onClick="onClickCorrectSelected"/>
+            <Button profile="fplActionButton" position="705px 22px" size="220px 42px" text="$l10n_fpl_exportRecords" onClick="onExportRecords"/>
+            <Button profile="fplActionButton" position="940px 22px" size="220px 42px" text="$l10n_fpl_exportAudit" onClick="onExportAudit"/>
+            <Text profile="fplStatus" id="activityStatusText" position="1175px 31px" size="285px 24px"/>
+        </GuiElement>
+
+        <GuiElement id="scenarioPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" id="scenarioTitle" position="0px 750px" size="980px 34px"/>
+            <Text profile="fplDetailMeta" position="0px 720px" size="1460px 24px" text="$l10n_fpl_scenarioNotice"/>
+            <BoxLayout profile="fplKpiRow" position="0px 605px" size="1460px 92px">
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_harvestValue"/><Text profile="fplKpiValue" id="scenarioHarvestValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_selectedCosts"/><Text profile="fplKpiValue" id="scenarioCostValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_projectedMargin"/><Text profile="fplKpiValue" id="scenarioMarginValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_colCostHa"/><Text profile="fplKpiValue" id="scenarioCostPerHaValue"/></GuiElement>
+                <GuiElement profile="fplKpiCard"><Text profile="fplKpiLabel" text="$l10n_fpl_colMarginHa"/><Text profile="fplKpiValue" id="scenarioMarginPerHaValue"/></GuiElement>
+            </BoxLayout>
+            <Text profile="fplSectionTitle" position="0px 556px" size="700px 28px" text="$l10n_fpl_scenarioBasis"/>
+            <Text profile="fplMuted" position="0px 524px" size="1460px 24px" text="$l10n_fpl_scenarioTableAgreement"/>
+            <BoxLayout profile="fplSettingsColumn" position="0px 110px" size="720px 400px">
+                <Button profile="fplSettingRow" text="$l10n_fpl_includeDirect" onClick="onClickSettingDirect" id="scenarioDirectButton"/>
+                <Button profile="fplSettingRow" text="$l10n_fpl_includeInputs" onClick="onClickSettingInputs" id="scenarioInputsButton"/>
+                <Button profile="fplSettingRow" text="$l10n_fpl_includeFuel" onClick="onClickSettingFuel" id="scenarioFuelButton"/>
+            </BoxLayout>
+            <BoxLayout profile="fplSettingsColumn" position="740px 110px" size="720px 400px">
+                <Button profile="fplSettingRow" text="$l10n_fpl_includeDef" onClick="onClickSettingDef" id="scenarioDefButton"/>
+                <Button profile="fplSettingRow" text="$l10n_fpl_includeAllocated" onClick="onClickSettingAllocated" id="scenarioAllocatedButton"/>
+            </BoxLayout>
+            <Text profile="fplEmpty" id="scenarioUnavailableText" position="140px 350px" size="1180px 44px" text="$l10n_fpl_scenarioUnavailable"/>
+            <Text profile="fplStatus" id="scenarioStatus" position="0px 35px" size="1460px 24px"/>
+        </GuiElement>
+
+        <GuiElement id="comparisonPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" id="comparisonTitle" position="0px 750px" size="980px 34px"/>
+            <Text profile="fplDetailMeta" id="comparisonScopeText" position="0px 720px" size="1460px 24px"/>
+            <Button profile="fplCompactButton" id="comparisonMetricButton" position="1160px 720px" size="300px 34px" text="$l10n_fpl_chartMetric" onClick="onClickComparisonMetric"/>
+            <GuiElement profile="fplHeaderBox" position="0px 678px" size="1460px 34px">
+                <TableHeader id="comparisonSortHeaders[1]" profile="fplTableHeader" position="0px 0px" size="220px 32px" text="$l10n_fpl_colField" columnName="field" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="comparisonSortHeaders[2]" profile="fplTableHeader" position="220px 0px" size="190px 32px" text="$l10n_fpl_colPeriod" columnName="newest" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="comparisonSortHeaders[3]" profile="fplTableHeader" position="410px 0px" size="200px 32px" text="$l10n_fpl_colYieldHa" columnName="yieldPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="comparisonSortHeaders[4]" profile="fplTableHeader" position="610px 0px" size="200px 32px" text="$l10n_fpl_colValueHa" columnName="valuePerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="comparisonSortHeaders[5]" profile="fplTableHeader" position="810px 0px" size="200px 32px" text="$l10n_fpl_colCostHa" columnName="costPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <TableHeader id="comparisonSortHeaders[6]" profile="fplTableHeader" position="1010px 0px" size="200px 32px" text="$l10n_fpl_colMarginHa" columnName="marginPerHa" allowSortingAsc="true" allowSortingDesc="true"><Text profile="fplSortAsc" name="iconAscending"/><Text profile="fplSortDesc" name="iconDescending"/></TableHeader>
+                <Text profile="fplStaticHeader" position="1210px 0px" size="250px 32px" text="$l10n_fpl_colChart"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2px" size="1460px 2px"/>
+            </GuiElement>
+            <SmoothList profile="fplTableList" id="comparisonList" position="0px 92px" size="1460px 578px" emptyIndicatorId="comparisonEmptyText">
+                <ListItem profile="fplComparisonRow" name="comparisonRow">
+                    <Text profile="fplCellLeft" position="12px 0px" size="208px 42px" name="field"/>
+                    <Text profile="fplCellSmall" position="220px 0px" size="190px 42px" name="period"/>
+                    <Text profile="fplCellNumber" position="410px 0px" size="200px 42px" name="yieldPerHa"/>
+                    <Text profile="fplCellNumber" position="610px 0px" size="200px 42px" name="valuePerHa"/>
+                    <Text profile="fplCellNumber" position="810px 0px" size="200px 42px" name="costPerHa"/>
+                    <Text profile="fplCellNumber" position="1010px 0px" size="200px 42px" name="marginPerHa"/>
+                    <Bitmap profile="fplChartTrack" position="1225px 18px" size="210px 7px" name="chartTrack"/>
+                    <Bitmap profile="fplChartFill" position="1225px 18px" size="0px 7px" name="chartFill"/>
+                    <Bitmap profile="fplChartMarker" position="1225px 14px" size="2px 15px" name="chartZero"/>
+                    <Bitmap profile="fplChartAverage" position="1225px 11px" size="2px 21px" name="chartAverage"/>
+                </ListItem>
+            </SmoothList>
+            <Text profile="fplEmpty" id="comparisonEmptyText" position="140px 370px" size="1180px 44px" text="$l10n_fpl_noComparableCycles"/>
+            <ThreePartBitmap profile="fplSliderBox" position="1478px 92px" size="6px 578px"><Slider profile="fs25_listSlider" dataElementId="comparisonList"/></ThreePartBitmap>
+            <Text profile="fplMuted" position="0px 42px" size="1460px 28px" text="$l10n_fpl_compareAllBasesNotice"/>
+        </GuiElement>
+
+        <GuiElement id="settingsPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" position="0px 750px" size="980px 34px" text="$l10n_fpl_settings"/>
+            <Text profile="fplDetailMeta" position="0px 720px" size="1460px 24px" text="$l10n_fpl_settingsNotice"/>
+            <BoxLayout profile="fplSettingsColumn" position="0px 270px" size="720px 425px">
+                <Button profile="fplSettingRow" id="settingExcludedButton" text="$l10n_fpl_showExcluded" onClick="onClickSettingExcluded"/>
+                <Button profile="fplSettingRow" id="settingNewestButton" text="$l10n_fpl_csvOrder" onClick="onClickSettingNewest"/>
+                <Button profile="fplSettingRow" text="$l10n_fpl_exportCycles" onClick="onExport"/>
+                <Button profile="fplSettingRow" text="$l10n_fpl_reviewLegacyClosures" onClick="onClickReviewLegacyClosures"/>
+            </BoxLayout>
+            <BoxLayout profile="fplSettingsColumn" position="740px 270px" size="720px 425px">
+                <Button profile="fplSettingRow" id="settingDirectButton" text="$l10n_fpl_includeDirect" onClick="onClickSettingDirect"/>
+                <Button profile="fplSettingRow" id="settingInputsButton" text="$l10n_fpl_includeInputs" onClick="onClickSettingInputs"/>
+                <Button profile="fplSettingRow" id="settingFuelButton" text="$l10n_fpl_includeFuel" onClick="onClickSettingFuel"/>
+                <Button profile="fplSettingRow" id="settingDefButton" text="$l10n_fpl_includeDef" onClick="onClickSettingDef"/>
+                <Button profile="fplSettingRow" id="settingAllocatedButton" text="$l10n_fpl_includeAllocated" onClick="onClickSettingAllocated"/>
+            </BoxLayout>
+            <Text profile="fplSectionTitle" position="0px 220px" size="700px 28px" text="$l10n_fpl_runtimeCompatibility"/>
+            <Text profile="fplNotice" id="runtimeCompatibilityValue" position="0px 90px" size="1460px 120px" text="$l10n_fpl_compatibilityUnavailable"/>
+            <Text profile="fplStatus" id="settingsStatusText" position="0px 35px" size="1460px 24px"/>
+        </GuiElement>
+
+        <GuiElement id="legacyPanel" profile="fplPanel" visible="false">
+            <Text profile="fplDetailTitle" position="0px 750px" size="980px 34px" text="$l10n_fpl_legacyReviewTitle"/>
+            <Text profile="fplDetailMeta" id="legacyReviewSummary" position="0px 720px" size="1460px 24px"/>
+            <GuiElement profile="fplHeaderBox" position="0px 678px" size="1460px 34px">
+                <Text profile="fplStaticHeader" position="0px 0px" size="450px 32px" text="$l10n_fpl_colField"/>
+                <Text profile="fplStaticHeader" position="450px 0px" size="180px 32px" text="$l10n_fpl_colCrop"/>
+                <Text profile="fplStaticHeader" position="630px 0px" size="310px 32px" text="$l10n_fpl_colLastHarvest"/>
+                <Text profile="fplStaticHeader" position="940px 0px" size="310px 32px" text="$l10n_fpl_colLastActivity"/>
+                <Text profile="fplStaticHeader" position="1250px 0px" size="210px 32px" text="$l10n_fpl_colClosureSelection"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2px" size="1460px 2px"/>
+            </GuiElement>
+            <SmoothList profile="fplTableList" id="legacyList" position="0px 92px" size="1460px 578px" onClick="onLegacyListClick" emptyIndicatorId="legacyReviewEmptyText">
+                <ListItem profile="fplLegacyRow" name="legacyRow">
+                    <Text profile="fplCellLeft" position="16px 0px" size="430px 44px" name="field"/>
+                    <Text profile="fplCell" position="450px 0px" size="180px 44px" name="crop"/>
+                    <Text profile="fplCell" position="630px 0px" size="310px 44px" name="harvest"/>
+                    <Text profile="fplCell" position="940px 0px" size="310px 44px" name="activity"/>
+                    <Text profile="fplCell" position="1250px 0px" size="210px 44px" name="selected"/>
+                </ListItem>
+            </SmoothList>
+            <Text profile="fplEmpty" id="legacyReviewEmptyText" position="140px 370px" size="1180px 44px" text="$l10n_fpl_noLegacyClosureCandidates"/>
+            <ThreePartBitmap profile="fplSliderBox" position="1478px 92px" size="6px 578px"><Slider profile="fs25_listSlider" dataElementId="legacyList"/></ThreePartBitmap>
+            <Button profile="fplActionButton" position="0px 22px" size="300px 42px" text="$l10n_fpl_legacyReviewBack" onClick="onClickCancelLegacyReview"/>
+            <Button profile="fplActionButton" id="legacyReviewCloseButton" position="1160px 22px" size="300px 42px" text="$l10n_fpl_legacyCloseSelected" onClick="onClickCloseSelectedLegacyClosures"/>
+        </GuiElement>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="fplPanel" extends="emptyPanel"><position value="0px -60px"/><size value="1590px 820px"/></Profile>
+        <Profile name="fplTableList" extends="emptyPanel"><listSmoothingDisabled value="false"/><selectedWithoutFocus value="true"/><canReceiveFocusWhileEmpty value="false"/></Profile>
+        <Profile name="fplHeaderBox" extends="emptyPanel"/>
+        <Profile name="fplCycleRow" extends="baseReference" with="anchorTopStretchingX alternating"><height value="38px"/><imageColor value="$preset_fs25_colorGrey"/><alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/><imageSelectedColor value="$preset_fs25_colorMainHighlight"/></Profile>
+        <Profile name="fplActivityRow" extends="fplCycleRow"><height value="42px"/></Profile>
+        <Profile name="fplComparisonRow" extends="fplActivityRow"/>
+        <Profile name="fplLegacyRow" extends="fplActivityRow"><height value="44px"/></Profile>
+        <Profile name="fplDetailRow" extends="fplCycleRow"/>
+        <Profile name="fplSliderBox" extends="fs25_listSliderBox"/>
+        <Profile name="fplTableHeader" extends="baseReference"><imageColor value="$preset_colorTransparent"/><textFocusedColor value="$preset_fs25_colorMainHighlight"/><textHighlightedColor value="$preset_fs25_colorMainHighlight"/><textSelectedColor value="$preset_fs25_colorMainHighlight"/><textSize value="14px"/><textBold value="true"/><textUpperCase value="true"/><textColor value="$preset_colorWhite_50"/><textAlignment value="center"/><textVerticalAlignment value="middle"/></Profile>
+        <Profile name="fplStaticHeader" extends="fplTableHeader"/>
+        <Profile name="fplSortAsc" extends="fs25_textDefault"><position value="0.88 7px"/><size value="16px 16px"/><text value="▲"/><textSize value="11px"/><textColor value="$preset_fs25_colorMainHighlight"/><visible value="false"/></Profile>
+        <Profile name="fplSortDesc" extends="fplSortAsc"><text value="▼"/></Profile>
+        <Profile name="fplCell" extends="baseReference" with="anchorStretchingYLeft"><textSize value="14px"/><textAlignment value="center"/><textVerticalAlignment value="middle"/><textColor value="$preset_fs25_colorMainLight"/><textSelectedColor value="$preset_fs25_colorMainDark"/><textLayoutMode value="scrolling"/></Profile>
+        <Profile name="fplCellSmall" extends="fplCell"><textSize value="12px"/></Profile>
+        <Profile name="fplCellLeft" extends="fplCell"><textAlignment value="left"/></Profile>
+        <Profile name="fplCellNumber" extends="fplCell"><textAlignment value="right"/><textBold value="true"/><textOffset value="-14px 0px"/></Profile>
+        <Profile name="fplFilterLabel" extends="fs25_textDefault"><textSize value="14px"/><textBold value="true"/><textColor value="$preset_colorWhite_50"/><textVerticalAlignment value="middle"/></Profile>
+        <Profile name="fplFilterOption" extends="fs25_multiTextOption"><size value="190px 34px"/></Profile>
+        <Profile name="fplCompactButton" extends="buttonOK"><textSize value="14px"/></Profile>
+        <Profile name="fplActionButton" extends="buttonOK"><textSize value="15px"/></Profile>
+        <Profile name="fplCount" extends="fs25_textDefault"><textSize value="14px"/><textAlignment value="right"/><textColor value="$preset_colorWhite_50"/></Profile>
+        <Profile name="fplEmpty" extends="fs25_textDefault"><textSize value="20px"/><textAlignment value="center"/><textColor value="$preset_colorWhite_50"/></Profile>
+        <Profile name="fplStatus" extends="fs25_textDefault"><textSize value="13px"/><textColor value="$preset_colorWhite_50"/><textLayoutMode value="scrolling"/></Profile>
+        <Profile name="fplDetailTitle" extends="fs25_textDefault"><textSize value="26px"/><textBold value="true"/><textColor value="$preset_fs25_colorMainLight"/></Profile>
+        <Profile name="fplDetailMeta" extends="fs25_textDefault"><textSize value="14px"/><textColor value="$preset_colorWhite_50"/></Profile>
+        <Profile name="fplSectionTitle" extends="fs25_textDefault"><textSize value="20px"/><textBold value="true"/><textColor value="$preset_fs25_colorMainLight"/></Profile>
+        <Profile name="fplMuted" extends="fs25_textDefault"><textSize value="14px"/><textColor value="$preset_colorWhite_50"/></Profile>
+        <Profile name="fplActivityTotals" extends="fplMuted"/>
+        <Profile name="fplKpiRow" extends="emptyPanel"><flowDirection value="horizontal"/><spacing value="12px"/></Profile>
+        <Profile name="fplKpiCard" extends="baseReference"><size value="282px 92px"/><imageColor value="$preset_fs25_colorGreyDark_50"/></Profile>
+        <Profile name="fplKpiLabel" extends="fs25_textDefault"><position value="16px 58px"/><size value="250px 22px"/><textSize value="13px"/><textUpperCase value="true"/><textColor value="$preset_colorWhite_50"/></Profile>
+        <Profile name="fplKpiValue" extends="fs25_textDefault"><position value="16px 18px"/><size value="250px 34px"/><textSize value="23px"/><textBold value="true"/><textColor value="$preset_fs25_colorMainLight"/></Profile>
+        <Profile name="fplSettingsColumn" extends="emptyPanel"><flowDirection value="vertical"/><spacing value="10px"/></Profile>
+        <Profile name="fplSettingRow" extends="buttonOK"><size value="720px 50px"/><textSize value="16px"/><textAlignment value="left"/><textOffset value="20px 0px"/></Profile>
+        <Profile name="fplNotice" extends="fs25_textDefault"><textSize value="15px"/><textColor value="$preset_colorWhite_50"/><textVerticalAlignment value="top"/></Profile>
+        <Profile name="fplChartTrack" extends="baseReference"><imageColor value="0.14 0.16 0.17 1"/></Profile>
+        <Profile name="fplChartFill" extends="baseReference"><imageColor value="0.42 0.55 0.57 1"/></Profile>
+        <Profile name="fplChartMarker" extends="baseReference"><imageColor value="0.75 0.78 0.78 0.9"/></Profile>
+        <Profile name="fplChartAverage" extends="baseReference"><imageColor value="0.95 0.76 0.18 1"/></Profile>
+    </GUIProfiles>
+</GUI>

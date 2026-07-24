@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l10n>
+    <texts>
+        <text name="input_FPL_OPEN_LEDGER" text="Open Field Profitability Ledger"/>
+        <text name="fpl_title" text="Field Profitability Ledger"/>
+    <text name="fpl_cycles" text="Field &amp; crop cycles"/>
+    <text name="fpl_cycleCurrent" text="Current"/>
+    <text name="fpl_cycleHistory" text="History"/>
+    <text name="fpl_cycleAll" text="All"/>
+        <text name="fpl_overview" text="Overview"/>
+        <text name="fpl_activity" text="Activity"/>
+        <text name="fpl_scenario" text="Scenario"/>
+        <text name="fpl_comparison" text="Compare"/>
+        <text name="fpl_settings" text="Settings"/>
+        <text name="fpl_previous" text="Previous"/>
+        <text name="fpl_next" text="Next"/>
+        <text name="fpl_export" text="Export"/>
+        <text name="fpl_exportCycles" text="Export all cycles"/>
+        <text name="fpl_exportRecords" text="Export cycle detail"/>
+        <text name="fpl_exportAudit" text="Export audit"/>
+        <text name="fpl_ok" text="OK"/>
+        <text name="fpl_ready" text="Ready"/>
+        <text name="fpl_scope" text="Scope"/>
+        <text name="fpl_crop" text="Crop"/>
+        <text name="fpl_search" text="Search fields, aliases or crops"/>
+        <text name="fpl_searchValue" text="Search: %s"/>
+        <text name="fpl_searchDialogTitle" text="Search fields, parcels, aliases or crops"/>
+        <text name="fpl_groupByField" text="Group by field"/>
+        <text name="fpl_groupByFieldValue" text="Group by field: %s"/>
+        <text name="fpl_filterAll" text="All"/>
+        <text name="fpl_cycleCount" text="%d cycles"/>
+        <text name="fpl_viewCycle" text="View cycle"/>
+        <text name="fpl_backToCycles" text="Back to cycles"/>
+        <text name="fpl_cyclePeriod" text="%s – %s"/>
+        <text name="fpl_now" text="Now"/>
+        <text name="fpl_area" text="Cycle area"/>
+        <text name="fpl_colField" text="Field"/>
+        <text name="fpl_colCrop" text="Crop"/>
+        <text name="fpl_colState" text="State"/>
+        <text name="fpl_colPeriod" text="Cycle period"/>
+        <text name="fpl_colArea" text="Area"/>
+        <text name="fpl_colYieldHa" text="Yield / ha"/>
+        <text name="fpl_colValueHa" text="Crop value / ha"/>
+        <text name="fpl_colCostHa" text="Cost / ha"/>
+        <text name="fpl_colMarginHa" text="Margin / ha"/>
+        <text name="fpl_colQuality" text="Quality"/>
+        <text name="fpl_colChart" text="Selected metric"/>
+        <text name="fpl_colLastHarvest" text="Last harvest"/>
+        <text name="fpl_colLastActivity" text="Last activity"/>
+        <text name="fpl_colClosureSelection" text="Closure"/>
+        <text name="fpl_colTime" text="Time"/>
+        <text name="fpl_colType" text="Type"/>
+        <text name="fpl_colCategory" text="Category"/>
+        <text name="fpl_colClass" text="Class"/>
+        <text name="fpl_colAmount" text="Amount"/>
+        <text name="fpl_colStatus" text="Status"/>
+        <text name="fpl_noCycles" text="No supported field activity has been recorded yet."/>
+        <text name="fpl_selectCycle" text="Select a field and crop cycle to see its ledger."/>
+        <text name="fpl_noRecordedTotals" text="This cycle has no included numeric totals yet."/>
+        <text name="fpl_noActivity" text="No activity is available on this page."/>
+        <text name="fpl_runtimeInactive" text="The ledger is unavailable in this mission."/>
+        <text name="fpl_unknown" text="Unknown"/>
+        <text name="fpl_unknownCrop" text="Crop not yet identified"/>
+        <text name="fpl_unavailable" text="Unavailable"/>
+        <text name="fpl_areaUnavailable" text="Area unavailable"/>
+        <text name="fpl_enabled" text="Enabled"/>
+        <text name="fpl_disabled" text="Disabled"/>
+        <text name="fpl_newestFirst" text="Newest first"/>
+        <text name="fpl_oldestFirst" text="Oldest first"/>
+        <text name="fpl_fieldNumber" text="Field %s"/>
+        <text name="fpl_parcelNumber" text="Parcel %s"/>
+        <text name="fpl_landAlias" text="%s · %s"/>
+        <text name="fpl_cycleRowMeta" text="%s  ·  %s"/>
+        <text name="fpl_selectedMeta" text="%s  ·  %s"/>
+        <text name="fpl_pagePosition" text="Page %d of %d"/>
+        <text name="fpl_recordPosition" text="Records %d–%d of %d"/>
+        <text name="fpl_totalPosition" text="Totals %d–%d of %d"/>
+        <text name="fpl_value_hours" text="%s h"/>
+        <text name="fpl_value_minutes" text="%s min"/>
+        <text name="fpl_value_seconds" text="%s s"/>
+        <text name="fpl_value_hectares" text="%s ha"/>
+        <text name="fpl_value_squareMetres" text="%s m²"/>
+        <text name="fpl_value_litres" text="%s L"/>
+        <text name="fpl_value_litresPerHa" text="%s L/ha"/>
+        <text name="fpl_value_moneyPerHa" text="%s/ha"/>
+        <text name="fpl_value_percent" text="%s%%"/>
+        <text name="fpl_quality" text="Cycle quality"/>
+        <text name="fpl_recordQuality" text="Record quality"/>
+        <text name="fpl_yield" text="Observed yield"/>
+        <text name="fpl_audit" text="Audit trail"/>
+        <text name="fpl_qualityCountsPrimary" text="%d complete · %d partial"/>
+        <text name="fpl_qualityCountsSecondary" text="%d unsupported"/>
+        <text name="fpl_auditCountsPrimary" text="%d corrections · %d exclusions"/>
+        <text name="fpl_auditCountsSecondary" text="%d compacted records"/>
+        <text name="fpl_canonicalTotals" text="Canonical recorded totals"/>
+        <text name="fpl_activityDetail" text="Operation and accounting detail"/>
+        <text name="fpl_activityLiveTotals" text="Live cycle totals: AI %s · machinery %s · harvest %s · area %s"/>
+        <text name="fpl_estimatedScenario" text="Projected field-cycle margin"/>
+        <text name="fpl_estimatedHarvestValue" text="Expected crop value"/>
+        <text name="fpl_selectedCosts" text="Included costs"/>
+        <text name="fpl_estimatedGrossMargin" text="Projected margin"/>
+        <text name="fpl_costPerHa" text="Included costs / ha"/>
+        <text name="fpl_scenarioNotice" text="Expected crop value minus the cost categories enabled in Settings."/>
+        <text name="fpl_scenarioNoticeActual" text="Helper wages and fuel use actual FS25 cash charges."/>
+        <text name="fpl_scenarioNoticeEstimated" text="Other costs are marked estimates. Helper DEF has no separate FS25 cash charge."/>
+        <text name="fpl_scenarioSettingsHint" text="Settings controls which recorded costs are included. Changing a switch never deletes the underlying Activity records."/>
+        <text name="fpl_scenarioUnavailable" text="Scenario unavailable"/>
+        <text name="fpl_unavailableReason" text="This projection cannot be calculated because %s."/>
+        <text name="fpl_reason_estimatedHarvestValueUnavailable" text="the harvested crop does not yet have an expected market value"/>
+        <text name="fpl_reason_directObservedCostsUnavailable" text="no direct observed costs have been recorded"/>
+        <text name="fpl_reason_replacementValuedInputsUnavailable" text="no replacement-valued inputs have been recorded"/>
+        <text name="fpl_reason_replacementFuelValueUnavailable" text="no replacement-valued fuel has been recorded"/>
+        <text name="fpl_reason_replacementDefValueUnavailable" text="no replacement-valued DEF has been recorded"/>
+        <text name="fpl_reason_allocatedCostUnavailable" text="an enabled allocated cost has not been recorded"/>
+        <text name="fpl_reason_harvestOrAreaUnavailable" text="harvest quantity or harvested area is unavailable"/>
+        <text name="fpl_reason_cycleAreaUnavailable" text="the cycle land area is unavailable"/>
+        <text name="fpl_reason_priceUnavailable" text="the FS25 economy price was unavailable at observation time"/>
+        <text name="fpl_reason_fillTypePriceUnavailable" text="the observed fill type could not be priced"/>
+        <text name="fpl_reason_aiLabourRateUnavailable" text="the FS25 AI field-work rate was unavailable"/>
+        <text name="fpl_reason_repairCurveUnavailable" text="the FS25 repair curve was unavailable"/>
+        <text name="fpl_reason_unknown" text="one or more required recorded components are unavailable"/>
+        <text name="fpl_comparisonTitle" text="Compare %s cycles"/>
+        <text name="fpl_comparisonScope" text="%d comparable cycles · newest %d-cycle history window"/>
+        <text name="fpl_comparisonScopeTruncated" text="Farm %s · %d comparable cycles in the newest %d-cycle history window"/>
+        <text name="fpl_fieldCycle" text="Field and cycle"/>
+        <text name="fpl_comparisonRowMeta" text="%s · %s"/>
+        <text name="fpl_noComparableCycles" text="No comparable cycles are available in this history window."/>
+        <text name="fpl_chartMetric" text="Metric"/>
+        <text name="fpl_chartOrder" text="Order"/>
+        <text name="fpl_metric_marginPerHa" text="Margin / ha"/>
+        <text name="fpl_metric_yieldPerHa" text="Yield / ha"/>
+        <text name="fpl_metric_costPerHa" text="Cost / ha"/>
+        <text name="fpl_metric_valuePerHa" text="Crop value / ha"/>
+        <text name="fpl_order_highest" text="Highest first"/>
+        <text name="fpl_order_lowest" text="Lowest first"/>
+        <text name="fpl_order_field" text="Field order"/>
+        <text name="fpl_order_newest" text="Newest first"/>
+        <text name="fpl_selectedMetric" text="%s · selected cycle"/>
+        <text name="fpl_averageMetric" text="%s · farm average"/>
+        <text name="fpl_differenceMetric" text="Difference from average"/>
+        <text name="fpl_comparableCount" text="Comparable cycles"/>
+        <text name="fpl_chartScale" text="%s · gold marker = farm average"/>
+        <text name="fpl_exactValue" text="Exact value"/>
+        <text name="fpl_presentationSettings" text="Presentation &amp; scenario settings"/>
+        <text name="fpl_settingsNotice" text="These local preferences change presentation only. They never change or rewrite ledger totals."/>
+        <text name="fpl_csvOrder" text="CSV cycle order"/>
+        <text name="fpl_settingWithValue" text="%s: %s"/>
+        <text name="fpl_scenarioBasis" text="Included cost basis"/>
+        <text name="fpl_scenarioTableAgreement" text="These switches update Scenario and the Cost/ha and Margin/ha columns together."/>
+        <text name="fpl_harvestValue" text="Expected crop value"/>
+        <text name="fpl_projectedMargin" text="Projected margin"/>
+        <text name="fpl_compareAllBasesNotice" text="Compare deliberately uses every available cost basis so historical peers stay directly comparable."/>
+        <text name="fpl_sortOrder" text="Cycle sort order"/>
+        <text name="fpl_cycleFilter" text="Cycle state filter"/>
+        <text name="fpl_showExcluded" text="Show excluded audit records"/>
+        <text name="fpl_includeDirect" text="Include direct observed costs"/>
+        <text name="fpl_includeInputs" text="Include replacement-valued inputs"/>
+        <text name="fpl_includeFuel" text="Include replacement-valued fuel"/>
+        <text name="fpl_includeDef" text="Include replacement-valued DEF"/>
+        <text name="fpl_includeAllocated" text="Include allocated costs"/>
+        <text name="fpl_runtimeCompatibility" text="Runtime compatibility"/>
+        <text name="fpl_compatibilityAllActive" text="Field work, inputs, harvest, machinery, labour, and valuation are active."/>
+        <text name="fpl_compatibilityLimited" text="Limited: %s unavailable. Other supported accounting remains active."/>
+        <text name="fpl_compatibilityUnavailable" text="Runtime compatibility status is unavailable."/>
+        <text name="fpl_compatibilityWithSaveWarning" text="%s %s"/>
+        <text name="fpl_saveWarningPreserved" text="Save warning: latest FPL history was not saved; the previous snapshot was preserved."/>
+        <text name="fpl_saveWarningFailed" text="Save warning: latest FPL history was not saved and no previous snapshot could be preserved."/>
+        <text name="fpl_capacityCompactionNotice" text="Capacity notice: closed-cycle detail was compacted; exact totals were preserved."/>
+        <text name="fpl_component_fieldWork" text="field work"/>
+        <text name="fpl_component_application" text="physical inputs"/>
+        <text name="fpl_component_harvest" text="harvest"/>
+        <text name="fpl_component_machinery" text="machinery and labour"/>
+        <text name="fpl_component_economics" text="valuation"/>
+        <text name="fpl_filter_all" text="All cycles"/>
+        <text name="fpl_filter_open" text="Open cycles"/>
+        <text name="fpl_filter_closed" text="Closed cycles"/>
+        <text name="fpl_filter_archived" text="Archived cycles"/>
+        <text name="fpl_state_open" text="Open"/>
+        <text name="fpl_state_closed" text="Closed"/>
+        <text name="fpl_state_archived" text="Archived"/>
+        <text name="fpl_excluded" text="Excluded · visible for audit"/>
+        <text name="fpl_unallocated" text="Partial · unallocated boundary activity"/>
+        <text name="fpl_included" text="Included"/>
+        <text name="fpl_recordDetails" text="Record details"/>
+        <text name="fpl_selectRecord" text="Select an Activity record first."/>
+        <text name="fpl_infoDialogUnavailable" text="The native record-detail dialog is unavailable in this runtime."/>
+        <text name="fpl_detailId" text="ID: %s"/>
+        <text name="fpl_detailTime" text="Time: %s"/>
+        <text name="fpl_detailType" text="Type: %s"/>
+        <text name="fpl_detailCategory" text="Category: %s"/>
+        <text name="fpl_detailClass" text="Accounting class: %s"/>
+        <text name="fpl_detailQuality" text="Quality: %s"/>
+        <text name="fpl_detailAmount" text="Original amount: %s"/>
+        <text name="fpl_detailAdjusted" text="Adjusted amount: %s"/>
+        <text name="fpl_detailDirection" text="Direction: %s"/>
+        <text name="fpl_detailExcluded" text="Excluded: %s"/>
+        <text name="fpl_detailProvenance" text="Provenance: %s"/>
+        <text name="fpl_detailReasons" text="Reasons: %s"/>
+        <text name="fpl_detailReferences" text="References: %s"/>
+        <text name="fpl_harvestAt" text="Harvest: %s"/>
+        <text name="fpl_activityAt" text="Last activity: %s"/>
+        <text name="fpl_setFieldAlias" text="Set field or parcel alias"/>
+        <text name="fpl_closeCycle" text="Close completed cycle"/>
+        <text name="fpl_closeCycleDialogTitle" text="Type CLOSE to permanently close this completed crop cycle"/>
+        <text name="fpl_closeCycleConfirmation" text="CLOSE"/>
+        <text name="fpl_closeCycleCancelled" text="Cycle close cancelled; enter CLOSE exactly to confirm."/>
+        <text name="fpl_cycleClosed" text="Crop cycle closed."/>
+    <text name="fpl_cycleCloseFailed" text="Could not close crop cycle: %s"/>
+    <text name="fpl_reviewLegacyClosures" text="Legacy open-cycle cleanup"/>
+    <text name="fpl_reviewLegacyClosuresValue" text="Review harvested candidates"/>
+    <text name="fpl_legacyReviewTitle" text="Review harvested open cycles"/>
+    <text name="fpl_legacyReviewSummary" text="%d candidates · %d selected (maximum %d per closure batch)"/>
+    <text name="fpl_legacyCandidateMeta" text="Harvest at %s · last activity at %s"/>
+    <text name="fpl_legacyCandidateSelected" text="Selected for closure"/>
+    <text name="fpl_legacyCandidateExcluded" text="Not selected"/>
+    <text name="fpl_legacySelectionLimit" text="Select at most %d cycles per closure batch."/>
+    <text name="fpl_noLegacyClosureSelection" text="Select at least one candidate before closing."/>
+    <text name="fpl_legacyReviewBack" text="Back without closing"/>
+    <text name="fpl_legacyCloseSelected" text="Close selected"/>
+    <text name="fpl_legacyClosureDialogTitle" text="Selected %d open cycles across %d fields. Type CLOSE to close only these cycles"/>
+    <text name="fpl_noLegacyClosureCandidates" text="No legacy open cycles with harvest evidence need review."/>
+    <text name="fpl_legacyClosureCancelled" text="Legacy cycle cleanup cancelled."/>
+    <text name="fpl_legacyClosureComplete" text="Closed %d reviewed legacy cycles. Full records were preserved."/>
+    <text name="fpl_legacyClosureReviewFailed" text="Could not review legacy cycle candidates: %s"/>
+    <text name="fpl_legacyClosureFailed" text="Could not close reviewed legacy cycles: %s"/>
+        <text name="fpl_excludeSelected" text="Exclude selected record"/>
+        <text name="fpl_correctSelected" text="Correct selected record"/>
+        <text name="fpl_selectedRecord" text="Selected %s. Exclusion keeps the original in the audit trail."/>
+        <text name="fpl_selectedRecordMeta" text="Selected · %s"/>
+        <text name="fpl_selectCycleForAlias" text="Select a field and crop cycle before setting its alias."/>
+        <text name="fpl_aliasDialogTitle" text="Field or parcel alias"/>
+        <text name="fpl_aliasSaved" text="Alias saved: %s"/>
+        <text name="fpl_selectRecordForExclusion" text="Select an activity record before excluding it."/>
+        <text name="fpl_exclusionDialogTitle" text="Reason for exclusion (original audit record is retained)"/>
+        <text name="fpl_exclusionSaved" text="Record excluded from summaries; the original remains in the audit trail."/>
+        <text name="fpl_selectRecordForCorrection" text="Select an activity record before correcting it."/>
+        <text name="fpl_correctionDeltaDialogTitle" text="Signed correction for %s (use + or -)"/>
+        <text name="fpl_correctionReasonDialogTitle" text="Reason for correction (original value is retained)"/>
+        <text name="fpl_invalidCorrectionDelta" text="Enter a non-zero signed number using a comma or dot as the decimal separator."/>
+        <text name="fpl_correctionSaved" text="Correction appended; the original value remains in the audit trail."/>
+        <text name="fpl_editFailed" text="Ledger edit failed: %s"/>
+        <text name="fpl_textInputUnavailable" text="The native text-input dialog is unavailable in this runtime."/>
+        <text name="fpl_queryFailed" text="Ledger query failed: %s"/>
+        <text name="fpl_settingsFailed" text="Settings could not be saved: %s"/>
+        <text name="fpl_exportUnavailable" text="CSV export is unavailable in this runtime."/>
+        <text name="fpl_exportSucceeded" text="CSV exported to %s"/>
+        <text name="fpl_exportFailed" text="CSV export failed: %s"/>
+        <text name="fpl_selectCycleForAudit" text="Select a cycle before exporting its audit trail."/>
+        <text name="fpl_selectCycleForRecords" text="Select a cycle before exporting its operation and accounting detail."/>
+        <text name="fpl_error_selectionUnavailable" text="the selected cycle or record is no longer available; refresh the ledger and try again"/>
+        <text name="fpl_error_openCycleRequired" text="this action is available only for an open crop cycle"/>
+        <text name="fpl_error_invalidRequest" text="the request contains an invalid value; review it and try again"/>
+        <text name="fpl_error_reportUnavailable" text="ledger data is temporarily unavailable; try again"/>
+        <text name="fpl_error_settingsSave" text="your previous local settings remain unchanged; try again"/>
+        <text name="fpl_error_exportDataChanged" text="ledger data changed during export; try again after field activity settles"/>
+        <text name="fpl_error_exportWrite" text="the file could not be written; check the export folder and try again"/>
+        <text name="fpl_error_exportUnavailable" text="export is temporarily unavailable; try again"/>
+        <text name="fpl_error_actionUnavailable" text="the request could not be completed; see the log for technical details"/>
+
+        <text name="fpl_class_Observed" text="Observed"/>
+        <text name="fpl_class_Direct" text="Direct"/>
+        <text name="fpl_class_Valued" text="Valued"/>
+        <text name="fpl_class_Allocated" text="Allocated"/>
+        <text name="fpl_class_Estimated" text="Estimated"/>
+        <text name="fpl_quality_Complete" text="Complete"/>
+        <text name="fpl_quality_Partial" text="Partial"/>
+        <text name="fpl_quality_Unsupported" text="Unsupported"/>
+        <text name="fpl_recordType_operation" text="Operation"/>
+        <text name="fpl_recordType_input" text="Input"/>
+        <text name="fpl_recordType_harvest" text="Harvest"/>
+        <text name="fpl_recordType_machinery" text="Machinery"/>
+        <text name="fpl_recordType_labour" text="Labour"/>
+        <text name="fpl_recordType_allocation" text="Allocation"/>
+        <text name="fpl_recordType_valuation" text="Valuation"/>
+        <text name="fpl_recordType_summary" text="Summary"/>
+        <text name="fpl_recordType_unknown" text="Record"/>
+
+        <text name="fpl_category_seed" text="Seed used"/>
+        <text name="fpl_category_fertilizer" text="Fertilizer applied"/>
+        <text name="fpl_category_lime" text="Lime applied"/>
+        <text name="fpl_category_herbicide" text="Herbicide applied"/>
+        <text name="fpl_category_manure" text="Manure applied"/>
+        <text name="fpl_category_slurry" text="Slurry applied"/>
+        <text name="fpl_category_digestate" text="Digestate applied"/>
+        <text name="fpl_category_fuel" text="Fuel used"/>
+        <text name="fpl_category_def" text="DEF used"/>
+        <text name="fpl_category_harvest" text="Harvest output"/>
+        <text name="fpl_category_workingTime" text="Working time"/>
+        <text name="fpl_category_aiLabourTime" text="AI labour time"/>
+        <text name="fpl_category_playerLabourTime" text="Player labour time"/>
+        <text name="fpl_category_wearDelta" text="Wear change"/>
+        <text name="fpl_category_directObservedCost" text="Direct observed cost"/>
+        <text name="fpl_category_inputReplacementValue" text="Input replacement value"/>
+        <text name="fpl_category_fuelReplacementValue" text="Fuel replacement value"/>
+        <text name="fpl_category_defReplacementValue" text="DEF replacement value"/>
+        <text name="fpl_category_estimatedHarvestValue" text="Estimated harvest value"/>
+        <text name="fpl_category_leaseAllocation" text="Lease allocation"/>
+        <text name="fpl_category_repairLiability" text="Accrued repair liability"/>
+        <text name="fpl_category_aiLabourAllocation" text="AI labour allocation"/>
+        <text name="fpl_category_playerLabourAllocation" text="Player labour allocation"/>
+        <text name="fpl_category_ownershipAllocation" text="Ownership allocation"/>
+        <text name="fpl_category_plowing" text="Plowing"/>
+        <text name="fpl_category_subsoiling" text="Subsoiling"/>
+        <text name="fpl_category_cultivating" text="Cultivating"/>
+        <text name="fpl_category_discHarrowing" text="Disc harrowing"/>
+        <text name="fpl_category_powerHarrowing" text="Power harrowing"/>
+        <text name="fpl_category_mulching" text="Mulching"/>
+        <text name="fpl_category_stonePicking" text="Stone picking"/>
+        <text name="fpl_category_seedingPlanting" text="Seeding or planting"/>
+        <text name="fpl_category_rolling" text="Rolling"/>
+        <text name="fpl_category_mechanicalWeeding" text="Mechanical weeding"/>
+        <text name="fpl_category_ordinaryArableHarvest" text="Harvested area"/>
+        <text name="fpl_category_mixedBoundaryTick" text="Unallocated boundary work"/>
+    </texts>
+</l10n>
